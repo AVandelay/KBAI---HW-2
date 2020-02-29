@@ -142,28 +142,28 @@ When the emphasis is instead on "kicked" then there is question for what the ver
 
 %Explore how the AI agent might be able to understand how different emphases alter the meaning of the sentence. What additional knowledge or abilities would it need to have? As part of this, provide a frame representation that captures these new understandings. You must provide frame representations for at least two different interpretations of the sentence, but you may provide more.
 \subsection{Literal or Figurative}
-But what of the idiom "kicked the can"? It means to put off work or an action until a later time. How would an AI agent be able to distinguish between the literal and figurative meaning behind the term? An AI agent may use the concepts from "Learning by Recording Cases" where frames for common idioms are included as part of the AI systems working memory. If the frame is "close enough" based on a predetermined threshold (i.e., nearest neighbor but slot differences of 2 slots or less), then the identified frame will inherit the slot values for the "idiom" frame. So in the case for "kicked the can" figuratively the frame should change the Object slot to Time, the Intent to "Declarative - Neutral".
+But what of the idiom "kicked the can"? It could mean to put off work or an action until a later time, or it could mean perishing, or it could be a literal kicking of a can. How would an AI agent be able to distinguish between the literal and figurative meaning behind the term? An AI agent may use Thematic Role Systems to create multiple types of frames based on common literal and figurative forms for the verb, which in this case would be kicked. From there individual slots would attempt to be filled for the AI agent across all of the frames and the frame that has most of the slots filled would be the frame that would be used.
 %Finally, discuss how an AI agent might be able to infer whether this sentence is to be taken literally or figuratively. How would an AI agent decide whether the statement describes a literal can or the figurative idea of putting work off for a later date?
 \section{Question \#3 - Toronto Declaration}
-The Toronto Declaration was established in 2018 as a guiding document for protecting individual rights and preventing discrimination within machine learning and AI systems. The major sections of the document are summarized below.
+The Toronto Declaration was established in 2018 as a guiding document for protecting individual rights and preventing discrimination within machine learning and AI systems \citep{Toronto}. The major sections of the document are summarized below.
 \subsection{Summary}
 %The Preamble...
-The "Preamble" for the Toronto Declaration lays the groundwork for why a Declaration needs to be established in the first place. Machine Learning systems, without proper forethought, monitoring, and auditing can exacerbate issues of equality and discrimination.
+The "Preamble" for the Toronto Declaration lays the groundwork for why a Declaration needs to be established in the first place. Machine Learning systems, without proper forethought, monitoring, and auditing can exacerbate issues of equality and discrimination \citep{Toronto}.
 
 %Using the Framework...
-The "Using the Framework" section of the Toronto Declaration begins with establishing what the scope for the human right to equality and non-discrimination entails "... such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status".
+The "Using the Framework" section of the Toronto Declaration begins with establishing what the scope for the human right to equality and non-discrimination entails "... such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status" \citep{Toronto}.
 
 %Duties of States...
-The "Duties of States", according to the Declaration, include responsibilities around the state use of machine learning systems that include identifying risks, ensuring transparency and accountability, and enforcing oversight. The state must also promote diversity, and hold private entities accountable.
+The "Duties of States", according to the Declaration, include responsibilities around the state use of machine learning systems that include identifying risks, ensuring transparency and accountability, and enforcing oversight. The state must also promote diversity, and hold private entities accountable \citep{Toronto}.
 
 %Responsibilities of Private Sector Actors...
-The "Responsibilities of Private Sector Actors" include the process of exercising the "human rights due diligence" process that includes i) identifying potential discriminatory outcomes, ii) taking action to prevent and mitigate discrimination, and iii) submit high-risk systems for potential equality and discrimination abuses for third-party audits.
+The "Responsibilities of Private Sector Actors" include the process of exercising the "human rights due diligence" process that includes i) identifying potential discriminatory outcomes, ii) taking action to prevent and mitigate discrimination, and iii) submit high-risk systems for potential equality and discrimination abuses for third-party audits \citep{Toronto}.
 
 %Right to an Effective Remedy...
-Finally, the "Right to an Effective Remedy", posits that states and private entities must have a system in place to allow for transparency and within machine learning systems as well as accountability for violations.
+Finally, the "Right to an Effective Remedy", posits that states and private entities must have a system in place to allow for transparency and within machine learning systems as well as accountability for violations \citep{Toronto}.
 % Research the Toronto Declaration. Summarize each of its top-level sections (the Preamble, Using the Framework…, Duties of States, Responsibilities of Private Sector Actors, and Right to an Effective Remedy).
 \subsection{Trade-Offs}
-There are definite advantages to widespread adoption of the Toronto Declaration. If the declaration were completely disregarded then there will be machine learning systems that either incidentally or purposefully violate equality and non-discrimination rights. For an example of incidental violation of equality and non-discrimination, this ProPublica article lists many real life examples of how an algorithm that is used in the justice system not only provides recommended "risk assessments" that not only have a poor correlation with the likelihood of a crime to occur, but also disproportionately target African Americans. There are definite risks to citizens if the declaration is discarded. It could include a loss of opportunity. An AI system that helps match individuals to potential job openings may not provide an individual with all possible job openings if there is unseen prejudice and bias. There could be financial loss. An individual may not be recommended a loan with more favorable rates based on a system that includes prejudice and bias.
+There are definite advantages to widespread adoption of the Toronto Declaration. If the declaration were completely disregarded then there will be machine learning systems that either incidentally or purposefully violate equality and non-discrimination rights. For an example of incidental violation of equality and non-discrimination, the ProPublica article "Machine Bias" lists many real life examples of how an algorithm that is used in the justice system not only provides recommended "risk assessments" that not only have a poor correlation with the likelihood of a crime to occur, but also disproportionately target African Americans \citep{Machine_Bias}. There are definite risks to citizens if the declaration is discarded. It could include a loss of opportunity. An AI system that helps match individuals to potential job openings may not provide an individual with all possible job openings if there is unseen prejudice and bias. There could be financial loss. An individual may not be recommended a loan with more favorable rates based on a system that includes prejudice and bias.
 
 %Steven, you need your sources here. Don't forget propublica... https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing 
 
@@ -184,126 +184,23 @@ The homework prompt for question 4 had us consider a thought experiment with Eth
 
 % Finally, Akhila, Ethan’s mountain climbing partner as well as Sofia’s regular copilot, ultimately undergoes all the same procedures as both of her friends, in roughly the same sequence. In the end, nothing organic is left from Akhila’s original body and brain.
 \subsection{Identity Definition}
-This scenario is remarkbly similar to the short story / thought experiment "Where Am I" written by Daniel C. Dennett. In the short story an individual was seperated from their body but was able to wirelessly control their body. Which is the person and the sense of self? The body or the brain? Could one exist without the other?
-\subsection{Threshold for Identity}
-\subsection{Identity for Ethan, Sofia, Akhila Thought Experiment}
+This scenario is remarkably similar to the short story / thought experiment "Where Am I" written by Daniel C. Dennett \citep{Dennett1978-DENWAI}. In the short story an individual was separated from their body but was able to wirelessly control their body. Which is the person and the sense of self? The body or the brain? Could one exist without the other? Similarly, if the aspect of personhood and identity is detached, such as with the "Ship of Theseus" thought experiment, would we consider a complete replacement of parts the same item? With all of these competing ideas and thoughts it is best to start with a clear definition of "Personhood" and "Identity" as it pertains to people in order to answer the thought experiment of Ethan, Sofia, and Akhila. 
+
+Similar to the works of Francis J. Beckwith , I define "personhood" as an entity with the capacity to reach "human functionality" \citep{Beckwith}. In this case we would use human functionality through an extensional definition lens where we list all of the various functions that humans "could" do, such as the use of tools, thought, language, creative thought, use of music, warfare, etc., to define what human functionality entails.
+
+Identity, on the other hand, I will define as the ability to self-identify and label all of the physical manifestations the physical realm that are controlled by a single cognitive system.
+
+Under these conditions let us go over a few test instances to see where along the personhood and identity definitions the person, place, or thing lies. A car does not have personhood because it does not have the capacity for human actions, and it does not have identity since it does not have a cognitive system. A chimpanzee does not have personhood because it does not have the full capacity for human actions, but one can argue that they do have identity since they are able to recognize themselves through a mirror test \citep{Chimpanzee}. How about a baby? A baby has full personhood since they do have the potential for human actions, but do not have identity since they are unable to identify all of the physical portions of themselves that attribute to a singular cognitive system. With this in mind we return to Ethan, Sofia, and Akhila.
+\subsection{Personhood and Identity for Ethan, Sofia, Akhila Thought Experiment}
+Is Ethan still Ethan in spite of him replacing all of his physical parts. If we assume that if you maintain both personhood and identity then you are "the same", then yes Ethan is still the same. Ethan has the capacity for human actions if all of his parts are replaced by mechanical items as long as they are able to completely mimic human actions.Would Ethan still be Ethan if he had his entire body rebuilt at once? As long as the system still is completely able to maintain their potential for human actions, then yes Ethan still maintains his personhood. Ethan also still has a full sense of all of the parts that compose their cognitive system. Therefore Ethan is still the person Ethan. 
+
+What of Sofia? Sofia has the potential to conduct human actions and therefore maintains her "personhood". If we assume that each item of Sofia's brain is physically within her body without any of the memory being offloaded into some type of "cloud" equivalent, then Sofia still maintains her identity. With both her personhood and identity intact, Sofia is still the person Sofia.
+
+Finally, what of Akhila who has completely replaced a biological self with a completely inorganic one? Similar to Ethan the state of personhood is a question of whether the mechanical parts mimic human actions completely. If the parts still mimic human functions, then Akhila still maintains personhood. For identity, as long as Akhila still maintains a complete awareness of all the portions of their cognitive system, then they still maintain their identity. Ultimately Akhila is still Akhila. Would Akhila still be Akhila if a complete copy would be built after a tragic accident? I would argue that yes Akhila would maintain a sense of self with both personhood and identity. Continuity of both personhood and identity is not an additional criteria to maintain the self, only that the criteria for both personhood and identity are met.
 % After all the procedures have been completed, who is still the same person they were originally? Is Ethan still Ethan? Is Sofia still Sofia? Is Akhila still Akhila? If any are not still the person they began as, at what point did they cease to be that person? Why?
 
 % Provide your answers to the above questions, and argue for your perspective. In your argument, consider the significance of the narrative: would it be different if Ethan had his entire body replaced at once, or if an entire copy of Akhila was built from a backup after a tragic accident? Your argument should not be purely opinion-based; you should provide definitions for relevant concepts regarding personhood and identity, and construct your argument from those definitions.
 
-\section{Typography}
-All text in JDF should be set in the Palatino typeface. It is available practically everywhere as a system font: Microsoft ships a version called \emph{Palatino Linotype}, and Apple uses a version simply called \emph{Palatino}. Those without either can look for \emph{Book Antiqua} in their fonts list or download \href{https://www.ctan.org/tex-archive/fonts/tex-gyre/opentype}{\TeX\ Gyre Pagella} from CTAN. They all come in regular and bold weights with matching italics.
-
-\subsection{Body text}
-Body text is set in the regular weight at 11 points with 17 points of line spacing, and 8.5 points of spacing added after each paragraph. It should be justified with hyphenation enabled where available. Paragraphs should not be indented. These styles can be automatically applied using the \emph{Normal} paragraph style.
-
-\textbf{Bold} and \textit{italics} should be used for emphasis. Hyperlinks may be inserted in the text, as well as {\tt in-line code}, superscripts\textsuperscript{ like this}, and subscripts\textsubscript{ like this}.
-
-\subsection{Title \& subtitle}
-The paper title should be set in the regular weight at 17 points with 22 points of line spacing, centered at the top of the first page. The title may span up to three lines. For typical assignments, the document title may be as simple as “Assignment 1” More specialized assignments may warrant more unique paper names, like “A Proposal to Create a New Document Format.”
-
-The author’s name and email should come next unless you want to or were asked to submit anonymously, in which case this can be omitted. They should be set in the same size and weight as body text, centered. These styles can be applied using the \emph{Title} and \emph{Subtitle} paragraph styles.
-
-\subsection{Abstract}
-If your paper requires an abstract, it should be placed at the top of the first page underneath the title block, preceded by the word \emph{Abstract} in bold italic. An extra 0.5" should be added to both sides. Not all papers require abstracts; only those that would benefit from a high-level summary of the project or its background.
-
-\subsection{Headings}
-Headings should all be set in the same size as body text (11 pt) in bold. With the exception of \emph{Heading 1}, they should all have 8.5 pt of space before and after. They should be hierarchically numbered: Word, Pages, and \LaTeX\ will do this automatically when you use the appropriate paragraph styles, but Google Docs users will need to number their headings manually. Headings should not span more than one line.
-
-\subsubsection{Heading 1}
-Heading 1 should be set in all caps, with letterspacing expanded by 0.66 points (6\%). It should have 11 points of space added before and 8.5 points of space added after.
-
-\subsubsection{Headings 2\,–\,4}
-Besides \emph{Heading 1}, which is set in caps, headings should always use sentence case (i.e., first word capitalized) rather than title case; after all, they are not titles. \emph{Heading 2} should be set in bold roman (upright), and \emph{Heading 3} should be set in bold italics. The use of headings beyond \emph{Heading 3} is discouraged.
-
-\subsubsubsection{Heading 4}\emph{Heading 4} is provided as a run-in sidehead. Like \emph{Heading 3}, it is set in bold italics, but it should be followed by an em dash and flow right into the text, as seen at the beginning of the current paragraph. It should be used more as a list style than a heading style, e.g. to set off a list of principles in a heuristic evaluation.
-
-\subsection{Page layout}
-JDF uses the US Letter paper size (8.5" x 11"). It has a top margin of 1", and bottom and side margins of 1.5". This yields a text block of 5.5" x 8.5", which is exactly \(\frac{1}{2}\) the size of the page, divided lengthwise.
-
-The page number should be included in the bottom margin, 1" from the bottom of the page – this creates symmetry with the top margin. No other elements should be placed in the margins.
-
-\section{Presentational elements}
-You are encouraged to use presentational elements liberally, as long as they add to the clarity of your submissions. They often require less space and fewer accompanying words to explain a given concept, and do a far better job of it.
-
-\subsection{Figures}
-Figures should always be centered on the page, although they may also take up the entire width and height of the text block. Figures should always be referenced in the text, and they should include a descriptive caption. Figures may also be equations, diagrams, or other kinds of content.
-
-If your figure includes a white background (e.g. an interface design or graph), it may aid legibility to add a \(\frac{1}{4}\)-point black border.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=6cm]{Figures/flowchart.png}
-	\caption{Make sure your flowcharts are more useful than this one. Source: \href{https://xkcd.com/1195/}{XKCD}.}
-	\label{fig:flowchart}
-\end{figure}
-
-Figure captions should be centered beneath the corresponding figure. The label (e.g. “Figure 1”) should be set in bold italics followed by an em dash, and the entire caption should be 8.5 pt with 14 pt of line spacing. The \emph{Figure Caption} style in Word will number your figures automatically. If need be, you may have one figure caption corresponding to consecutive figures and use either locational descriptors (e.g. “top left,” “middle”) or labels (e.g. “A”, “B”) to map parts of the caption to parts of the figure. Make sure captions fall on the same page as the corresponding figure or table; you may rearrange text to make this work.
-
-In Word, you may need to either change the image’s text wrap settings to “Top and Bottom” or change the line spacing of the image to 1.0.
-
-\subsection{Tables}
-You have freedom to format tables in the way that works best for your data. Generally, text should be left-aligned and numbers should be right-aligned or aligned at the decimal – you can do this using a custom tab stop. The default table style (shown below) reduces the text size to be equal to the caption text.
-
-Table captions should be formatted the same way as figure captions, but they should be placed above the table. The popular mnemonic for this is: figures at the foot, tables at the top. Like figures, tables should not exceed the margins and should be centered on the page.
-
-\begin{table}[h] % [h] forces the table to be output where it is defined in the code (it suppresses floating)
-	\caption{Mathematical constants. Notice how the approximations align at the decimal.}
-	\small % Reduce font size
-	\centering % Centre the table
-	\begin{tabular}{L{0.17\linewidth} C{0.12\linewidth} L{0.17\linewidth} L{0.4\linewidth}}
-		\textbf{Name} & \textbf{Symbol} & \textbf{Approximation} & \textbf{Description} \\
-		\toprule[0.5pt]
-		Golden ratio & $\phi$ & 1.618 & Number such that the ratio of " to the number is equal to the ratio of its reciprocal to 1\\
-		\midrule
-		Euler's number & $e$ & 2.71828 & Exponential growth constant\\
-		\midrule
-		Archimedes' constant & $\pi$ & 3.14 & The ratio between circumference and diameter of a circle\\
-		\midrule
-		One hundred & A+ & 100.00 & The grade we hope you’ll all earn in this class\\
-	\end{tabular}
-\end{table}
-
-\subsection{Additional elements}
-There are additional elements you may want to include in your paper, such as in-line or block quotes, lists, and more. For other content types not covered here, you have flexibility in determining how it should be used in this format.
-
-\subsubsection{Quotes}
-If you would like to quote an outside source, you may do so with quotation marks followed by a citation. If a quote is fewer than three lines, you may write it in-line. It is acceptable to replace pronouns with their target in brackets for clarity. For example, “Heavy use of peer grading would compromise [the school’s] reputation” (Joyner, 2016). If a quote exceeds three lines, you should set it as its own paragraph with 0.5” side margins, using the Blockquote style.
-
-\begin{quotation}
-	\noindent “Whether or not the grades generated by peers are reliably similar to grades generated by experts is only one factor worth considering, however. Student perception is also an important factor. A recent study indicated that reliance on peer grading is one of the top drivers of high MOOC dropout rates. This problem may be addressed by reintroducing some expert grading where possible.” %\citep{joyner2016}
-\end{quotation}
-
-\subsubsection{Lists}
-Bulleted and numbered lists are indented 0.5" from the left margin, with the bullet or number hanging in the margin by 0.25" (the default format).
-
-Bullet points:
-
-\begin{itemize}
-	\item First bullet point item
-	\item Second bullet point item
-\end{itemize}
-
-Numbered list:
-
-\begin{enumerate}
-	\item First numbered item
-	\item Second numbered item
-\end{enumerate}
-
-\section{Procedural elements}
-\subsection{In-line citations}
-Articles or sources to which you refer should be cited in-line with the authors’ names and the year of publication.\footnote{In-line citations are preferred over footnotes, and we favor APA citation format for both in-line citations and reference lists. Refer to the Purdue Online Writing Lab, or follow the above examples. Footnotes should use 8.5 point text with 14 point line spacing.} The citation should be placed close in the text to the actual claim, not merely at the end of the paragraph. For example: students in the OMSCS program are older and more likely to be employed than students in the on-campus program \citep{joyner2017}. In the event of multiple authors, list them. For example: research finds sentiment analysis of the text of OMSCS reviews corresponds to student-assigned ratings of the course \citep{newman2018}. You may also cite multiple studies together. For example: several studies have found students in the online version of an undergraduate CS1 class performed equally with students in a traditional version (\cite{joyner2018a}; \cite{joyner2018b}). If you would like to refer to an author in text, you may also do so by including the year (in parentheses) after the author’s name in the text. If a publication has more than 4 authors, you may list the first author followed by ‘et al.’ For example: \citeauthor{joyner2016} (\citeyear{joyner2016}) claim that a round of peer review prior to grading may improve graders’ efficiency and the quality of feedback given. This applies to parenthetical citations as well, e.g. \citep{joyner2016}.
-
-\subsection{Reference lists}
-References should be placed at the end of the paper in a dedicated section. Reference lists should be numbered and organized alphabetically by first author’s last name. If multiple papers have the same author(s) and year, you may append a letter to the end of the year to allow differentiated in-line text (e.g. Joyner, 2018a and Joyner, 2018b in the section above). If multiple papers have the same author(s), list them in chronological order starting with the older paper. Only works that are cited in-line should be included in the reference list. The reference list does not count against the length requirements.
-
 \section{References}
 \printbibliography[heading=none]
-
-\section{Appendices}
-You may optionally move certain information to appendices at the end of your paper, after the reference list. If you have multiple appendices, you should create a section with a \emph{Heading 1} of “Appendices.” Each appendix should begin with a descriptive \emph{Heading 2}; appendices can thus be referenced in the body text using their heading number and description, e.g. “Appendix 5.1: Survey responses.” If you have only one appendix, you can label it with the word “Appendix” followed by a descriptive title, e.g., “Appendix: Survey responses.”
-
-These appendices do not count against the page limit, but they should not contain any information required to answer the question in full. The body text should be sufficient to answer the question, and the appendices should be included only for you to reference or to give additional context. If you decide to move content to an appendix, be sure to summarize the content and note it in relevant place in the body text, e.g., “The raw data can be viewed in \emph{Appendix 5.1: Survey responses}.”
-
 \end{document}
